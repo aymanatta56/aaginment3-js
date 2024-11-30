@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment 3 js</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
+  </head>
+  <body>
+    
+    <div class="main text-center">
+      <h1 class="head1 my-5 fs-1 fw-bolder d-inline-block position-relative">
+        Bookmarker
+      </h1>
+    </div>
+
+    <div class="container my-5 p-3 cont d-flex flex-column align-items-center">
+      <h2 class="text-center mb-4 lingra fw-bolder">
+        <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+        <i class="fa-solid fa-bookmark"></i>
+      </h2>
+      <div class="form-group mb-3 w-100">
+        <label class="fw-bold mb-2"
+          ><i class="fa-solid fa-book-bookmark"></i> site name</label
+        >
+        <input oninput="demo1(this.value)"  id="bookmarkName" type="text" class="form-control " placeholder="Bookmark name" />
+      </div>
+      <div class="form-gruop mb-3 w-100">
+        <label class="fw-bold mb-2"
+          ><i class="fa-solid fa-sterling-sign"></i> Site URL</label
+        >
+        <input  oninput="demo2(this.value)" id="vauleUrl" type="text" class="form-control" placeholder="Website URL" />
+      </div>
+
+      <button  id="btn" class="btn btn-danger px-5" onclick="addData()">submit</button>
+      
+    </div>
+
+
+
+
+
+<div class="container text-center">
+    <table class="table">
+        <thead>
+            <tr class="text-capitalize">
+                <th >index</th>
+                <th>website name</th>
+                <th>visite</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody id="bodyData">
+            <!-- <tr>
+                <td>number</td>
+                <td>Name</td>
+                <td><button class="btn btn-success px-3"> <i class="fa-solid fa-eye p-1"></i>Visit</button></td>
+                <td><button class="btn btn-danger px-3"><i class="fa-solid fa-trash-can p-1"></i> Delete</button></td>
+            </tr> -->
+
+        </tbody>
+    </table>
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
